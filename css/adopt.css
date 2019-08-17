@@ -1,0 +1,110 @@
+#adopt img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: #b8860b -10px -10px 0px;
+    cursor: pointer;
+}
+
+#swapHeart>span {
+    color: gray;
+    font-size: 20px;
+}
+
+#swapHeart>span .redheart {
+    color: red;
+    font-size: 20px;
+}
+
+.imgHolder img {
+    max-height: 65vh;
+    width: auto;
+}
+
+.lightbox-prev, .lightbox-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    color: white;
+}
+
+.close {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.lightbox-next {
+    right: 0;
+}
+
+.lightbox-prev {
+    left: 0;
+}
+
+.modalcontent {
+    background-color: white;
+}
+
+@media screen and (min-width: 767px) {
+    .modalcontent {
+        background-color: white;
+        height: 90vh;
+    }
+
+    #foster-map{
+        width: 450px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #foster-map{
+        width: auto;
+        height: 380px;
+    }
+}
+
+.modalbody {
+    background-color: white;
+}
+
+.modalheader {
+    background-color: white;
+}
+
+
+.parallaxAdopt {
+    background-image: url('../img/cat\ hi-5.jpg');
+    /* Full height */
+    height: 80vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .modal {
+    display: block;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    height: auto;
+    max-width: 60wh;
+} */

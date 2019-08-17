@@ -1,0 +1,13 @@
+#whatwedo img {
+    width: 380px;
+    object-fit: cover;
+}
+
+.view:hover{
+    overflow: hidden;
+}
+
+#whatwedo img:hover {
+    transform: scale(1.1);
+    transition: all .2s;
+}

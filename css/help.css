@@ -1,0 +1,20 @@
+.help-header {
+    height: 40vh;
+    background-image: url('../img/peepcat.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    width: 100%;
+}
+
+#more button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: .375rem .75rem;
+    color: #007bff;
+}
+
+#more button .active{
+    color: #007bff;
+
+}
