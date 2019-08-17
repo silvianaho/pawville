@@ -2,15 +2,24 @@
     <div class="py-5 px-auto">
         <h3 class="text-center pb-3">Join Our Newsletter</h3>
         <div class="container w-75">
-            <form name="newsletter">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="newsletterName" placeholder="Name">
+
+            <form class="needs-validation" id="newsletter" novalidate action="thankyou.html">
+                <div class="row mt-2">
+                    <div class="col-12 mb-3 form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                        <div class="invalid-feedback d-none">
+                            Name must be more than 3 alphabets.
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="newsletterEmail" aria-describedby="emailHelp"
-                        placeholder="Email">
+
+                <div class="mb-3 form-group">
+                    <input type="email" class="form-control" id="email" name="email"placeholder="Email" required>
+                    <div class="invalid-feedback d-none">
+                        Please enter a valid email address.
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-secondary w-100">Submit</button>
+                <button type="submit" id="newsSubmit" class="btn btn-secondary w-100">Submit</button>
             </form>
         </div>
 
@@ -34,16 +43,22 @@
                 <h6>Support Us</h6>
                 <p class="m-0"><small><a href="adopt.html" class="text-white">Adoption</a></small></p>
                 <p class="m-0"><small><a href="donation1.html" class="text-white">Donation</a></small></p>
+                <p class="m-0"><small><a href="err.html" class="text-white">Volunteer</a></small></p>
                 <p class="m-0"><small><a href="error.html" class="text-white">Foster Homes</a></small></p>
                 <p class="m-0"><small><a href="error.html" class="text-white">PawVille Cafe</a></small></p>
             </div>
             <div class="col-md-3 col-6 p-3">
                 <h6>Social</h6>
-                <p class="m-0"><small><a href="https://facebook.com" target="_blank" class="text-white">Facebook</a></small></p>
-                <p class="m-0"><small><a href="https://twitter.com" target="_blank" class="text-white">Twitter</a></small></p>
-                <p class="m-0"><small><a href="https://instagram.com" target="_blank" class="text-white">Instagram</a></small></p>
-                <p class="m-0"><small><a href="https://pinterest.com" target="_blank" class="text-white">Pinterest</a></small></p>
-                <p class="m-0"><small><a href="https://youtube.com" target="_blank" class="text-white">YouTube</a></small></p>
+                <p class="m-0"><small><a href="https://facebook.com" target="_blank"
+                            class="text-white">Facebook</a></small></p>
+                <p class="m-0"><small><a href="https://twitter.com" target="_blank"
+                            class="text-white">Twitter</a></small></p>
+                <p class="m-0"><small><a href="https://instagram.com" target="_blank"
+                            class="text-white">Instagram</a></small></p>
+                <p class="m-0"><small><a href="https://pinterest.com" target="_blank"
+                            class="text-white">Pinterest</a></small></p>
+                <p class="m-0"><small><a href="https://youtube.com" target="_blank"
+                            class="text-white">YouTube</a></small></p>
             </div>
 
         </div>

@@ -28,19 +28,3 @@ if (pg.search("error.html") >= 0) {
 if (pg.search("help.html") >= 0) {
     document.writeln("<script type='text/javascript' src='js/help.js'></script>");
 }
-
-var newsletterForm = $('#footer input');
-var textregex = /^[A-Za-z]+$/;
-var emailregex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-function invalidInput(something) {
-    $('.invalid-feedback').removeClass('d-none');
-    something.addClass('is-invalid');
-    something.removeClass('is-valid');
-}
-
-function validInput(something) {
-    $('.invalid-feedback').addClass('d-none');
-    something.removeClass('is-invalid');
-    something.addClass('is-valid');
-}

@@ -3,11 +3,36 @@
     object-fit: cover;
 }
 
-.view:hover{
+.view:hover, .images:hover {
     overflow: hidden;
 }
 
-#whatwedo img:hover {
-    transform: scale(1.1);
-    transition: all .2s;
+#whatwedo .images:hover img {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+#whatwedo .images:hover span {
+    transition: all .7s;
+    visibility: visible;
+}
+
+#whatwedo span {
+    visibility: hidden;
+    font-size: 16px;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.tall img{
+    height: 600px;
+}
+
+.half img{
+    height: 286px;
 }
