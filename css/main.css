@@ -1,0 +1,86 @@
+.transparent-bar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        background-color: #fff;
+    }
+    nav .text-white {
+        color: #343a40 !important;
+    }
+}
+
+#header {
+    position: relative;
+    top: 0;
+}
+
+.mediabg {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    min-height: 500px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.pic1 {
+    background-image: url('../img/pups_opt\(1\)_waifu2x_photo_noise3_scale_tta_1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.darkbg {
+    top: 0;
+    background-color: #333;
+    opacity: 1;
+    width: 100%;
+    z-index: 1;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+footer {
+    bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#briefIntro::before {
+    display: block;
+    content: " ";
+    margin-top: -65px;
+    height: 65px;
+    visibility: hidden;
+}
+
+#notready {
+    text-align: center;
+    background-image: url('../img/cat\ peep.png');
+    background-repeat: no-repeat;
+    height: 85vh;
+    margin-top: 100px;
+}
