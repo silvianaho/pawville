@@ -28,3 +28,7 @@ if (pg.search("error.html") >= 0) {
 if (pg.search("help.html") >= 0) {
     document.writeln("<script type='text/javascript' src='js/help.js'></script>");
 }
+
+if (pg.search("contact.html") >= 0) {
+    document.writeln("<script type='text/javascript' src='js/contact.js'></script>");
+}
