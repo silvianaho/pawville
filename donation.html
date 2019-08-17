@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/donation.css">
+    <!-- <link rel="stylesheet" href="css/desktop.css"> -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+
+    <!-- <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@krista?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Krista Mangulsone"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Krista Mangulsone</span></a>-->
+    <div>
+        <div class="parallax"></div>
+        <h1 class="py-5 text-center text-dark pagetitle">Donate to Us!</h1>
+    </div>
+
+    <!-- Table -->
+    <div class="container plans">
+        <h3 class="py-2">Check out our bonus gifts for each pledge below:</h3>
+
+        <table class="table table-responsive-sm table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Monthly Pledge</th>
+                    <th>Bonus</th>
+                    <th>Onetime Pledge</th>
+                    <th>Bonus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>$38</td>
+                    <td>Monthly Gift Box</td>
+                    <td>$88</td>
+                    <td>PawVille Purse</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>$48</td>
+                    <td>PawVille Cafe Voucher ($20/Month) <span class="small">(Exp. 1 year)</span></td>
+                    <td>$188</td>
+                    <td>PawVille Cafe Voucher ($50) <span class="small">(Exp. 1 year)</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>$58</td>
+                    <td>Mistery Gift Box</td>
+                    <td>$288</td>
+                    <td>Pet Clothes</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form class="needs-validation" id="donation-form" novalidate action="thankyou.html">
+
+        <div class="container p-5 donationInterval">
+            <!-- <form class="needs-validation" id="donationInterval" novalidate> -->
+
+            <div class="row">
+                <!-- month block -->
+                <div class="p-5 form-group col-12 col-md-6 mb-0 text-center">
+
+                    <!-- Month radio button -->
+                    <div class="pb-4 d-block">
+                        <div class="form-check">
+                            <input type="radio" name="interval" id="interval-month" class="form-check-input mb-2"
+                                value="month">
+                            <label class="form-check-label text-uppercase font-weight-bold" for="interval-month">
+                                Monthly Pledge
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Text to explain the above option -->
+                    <div class="text-center sub-text my-2">
+                        <p>Your ongoing support will be supporting long-lasting projects that will create a real
+                            watch
+                            impact in preventing loss of community pets.</p>
+                    </div>
+
+                    <!-- Amounts -->
+                    <div id="moamounts" class="interval btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-dark"> <input type="radio" name="amounts" value=38> $38 </label>
+                        <label class="btn btn-dark"> <input type="radio" name="amounts" value=48> $48 </label>
+                        <label class="btn btn-dark"> <input type="radio" name="amounts" value=58> $58 </label>
+                    </div>
+
+                </div>
+
+                <!-- End of month block -->
+
+                <!-- onetime block -->
+                <div class="p-5 form-group col-12 col-md-6 mb-0 onetime text-center">
+
+                    <div class="text-center pb-4 d-block">
+
+                        <!-- Onetime radio button -->
+                        <div class="form-check mb-2">
+                            <input type="radio" name="interval" id="interval-onetime" class="form-check-input"
+                                value="onetime">
+                            <label class="form-check-label text-uppercase font-weight-bold" for="interval-onetime">
+                                Onetime Pledge
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Text to explain the above option -->
+                    <div class="text-center sub-text my-2">
+                        <p>Your one-time donation to PawVille will help protect our most precious species and
+                            places.</p>
+                    </div>
+
+                    <!-- Amounts -->
+                    <div id="otamounts" class="interval btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-dark"> <input type="radio" name="amounts" value=88> $88 </label>
+                        <label class="btn btn-dark"> <input type="radio" name="amounts" value=188> $188 </label>
+                        <label class="btn btn-dark"> <input type="radio" name="amounts" value=288> $288 </label>
+                    </div>
+
+                </div>
+
+                <!-- End of onetime block -->
+
+            </div>
+
+            <div id="continuetoform" class="container py-3 text-center d-none">
+                <button type="button" class="btn btn-primary cont-button">Continue</button>
+            </div>
+
+        </div>
+
+        <!-- End of quick donation toggle form -->
+
+
+
+        <!-- Identity form -->
+
+        <!-- add back d-none after form is done!! -->
+        <div class="container p-5 identity d-none" id="identityForm">
+            <div class="row mb-3"><button type="button" class="close"><i
+                        class="fas fa-arrow-alt-circle-left"></i></button>
+            </div>
+            <h4 class="mb-3">Personal Information</h4>
+
+            <!-- first & last name -->
+            <div class="row mt-2">
+                <div class="col-md-6 mb-3 form-group">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Bryan"
+                        required>
+                    <div class="invalid-feedback d-none">
+                        First name must be more than 3 alphabets.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 form-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Tee" required>
+                    <div class="invalid-feedback d-none">
+                        Last name must be more than 3 alphabets.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3 form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3 form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">
+                    Please enter your address.
+                </div>
+            </div>
+
+            <!-- Country -->
+            <div class="row">
+                <div class="col-md-4 mb-3 form-group">
+                    <label for="country">Country</label>
+                    <select class="custom-select d-block w-100" id="country" name="country" required>
+                        <option value="">-- Select a country --</option>
+                        <option value="SG">Singapore</option>
+                        <option disabled="">------------</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia, Plurinational State of</option>
+                        <option value="BA">Bosnia and Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BR">Brazil</option>
+                        <option value="IO">British Indian Ocean Territory</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CD">Democratic Republic of the Congo</option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CI">Côte d'Ivoire</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CW">Curaçao</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FK">Falkland Islands (Malvinas)</option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GG">Guernsey</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran, Islamic Republic of</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IM">Isle of Man</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JE">Jersey</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KP">North Korea</option>
+                        <option value="KR">South Korea</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macao</option>
+                        <option value="MK">Republic of Macedonia</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia, Federated States of</option>
+                        <option value="MD">Republic of Moldova</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="MP">Northern Mariana Islands</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PS">Palestinian Territory</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PN">Pitcairn</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russian</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="KN">Saint Kitts and Nevis</option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">Sao Tome and Principe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SX">Sint Maarten</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="SO">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="SS">South Sudan</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SD">Sudan</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SZ">Swaziland</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="SY">Syria</option>
+                        <option value="TW">Taiwan, Province of China</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad and Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TC">Turks and Caicos Islands</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">Venezuela, Bolivarian Republic of</option>
+                        <option value="VN">Viet Nam</option>
+                        <option value="VI">Virgin Islands</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+
+                <!-- State/prov -->
+                <div class="col-md-3 mb-3 form-group">
+                    <label for="region">Region/State/Province</label>
+                    <input type="text" class="form-control" id="region" name="region" placeholder="California" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid region.
+                    </div>
+                </div>
+                <!-- City -->
+                <div class="col-md-3 mb-3 form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="San Fransisco" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid state.
+                    </div>
+                </div>
+                <!-- Zip -->
+                <div class="col-md-2 mb-3 form-group">
+                    <label for="zip">Zip</label>
+                    <input type="number" class="form-control" id="zip" name="zip" placeholder="123456" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid zipcode.
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+
+            <!-- PAYMENT ROW -->
+            <div class="row">
+                <div class="col-md">
+                    <h4 class="mb-3">Payment</h4>
+
+                    <div class="d-block my-3 form-group">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked
+                                required>
+                            <label class="custom-control-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debit">Debit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <h4>Amount:</h4>
+                        </div>
+                        <div class="col-xl-9 myAmount">
+                            <h1>a</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Form -->
+            <div class="row">
+                <div class="col-md-6 mb-3 form-group">
+                    <label for="cc-name">Name on card</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="Name" name="cc-name" required>
+                    <small class="text-muted">Full name as displayed on card</small>
+                    <div class="invalid-feedback">
+                        Name on card is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 form-group">
+                    <label for="cc-number">Credit card number</label>
+                    <input type="number" class="form-control" id="cc-number" name="cc-number"
+                        placeholder="1234123412341234" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid credit card number.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-3 form-group">
+                    <label for="cc-expiration">Expiration Year</label>
+                    <input type="number" class="form-control" id="cc-expiration" name="cc-expiration" placeholder="2020"
+                        required>
+                    <div class="invalid-feedback">
+                        Please enter a valid expiration date.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 form-group">
+                    <label for="cc-cvv">CVV</label>
+                    <input type="number" class="form-control" id="cc-cvv" name="cc-cvv" placeholder="123" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid security code.
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" id="submitform" type="submit">Donate!</button>
+        </div>
+    </form>
+
+
+
+
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

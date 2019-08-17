@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/lightbox.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adopt.css">
+    <!-- <link rel="stylesheet" href="css/desktop.css"> -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <div>
+        <div class="parallaxAdopt"></div>
+        <h1 class="py-5 text-center text-dark pagetitle">Adopt Us!</h1>
+    </div>
+    <!-- <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@jonasvincentbe?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jonas Vincent"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Jonas Vincent</span></a> -->
+    <!-- First Step -->
+    <div class="container py-5" id="adopt">
+        <div class="row mx-auto">
+            <div class="col-lg-4 col-md-6 col-12 px-2 py-4">
+                <img src="../img/meow.jpg" class="img-fluid" alt="Bryan, 1 year old">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 px-2 py-4">
+                <img src="../img/cub.jpg" class="img-fluid" alt="Cub, 2 months old">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 px-2 py-4">
+                <img src="../img/stylishcat.jpg" class="img-fluid" alt="Jinnie, 5 months old">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 px-2 py-4">
+                <img src="../img/leo.jpg" class="img-fluid" alt="Leo, 2 months old">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 px-2 py-4">
+                <img src="../img/beagle.jpg" class="img-fluid" alt="Panda, 6 months old">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 px-2 py-4">
+                <img src="../img/grumpy.jpg" class="img-fluid" alt="Yoongi, 2 months old">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="container">
+        <div id="myModal" class="modal text-center d-none vw-100 vh-100">
+            <div class="modalcontainer mx-auto p-5">
+                <div class="modalcontent p-md-3">
+
+                    <!-- Modal Header -->
+                    <div class="modalheader px-md-5 mx-auto row">
+
+                        <div class="col d-flex">
+                            <h4 class="counter col p-3"></h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Nav -->
+                    <div class="modalnav container-fluid row no-gutters">
+                        <button class="mr-1 lightbox-prev btn">&#10094;</button>
+                        <button class="ml-1 lightbox-next btn">&#10095;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modalbody imgHolder"></div>
+
+                    <!-- Modal footer -->
+                    <div class="modalfooter text-center">
+                        <div class="col">
+                            <h4 class=" imgTitle"></h4>
+                        </div>
+                        <button id="swapHeart" class="btn swap">
+                            <span><i class="fas fa-heart"></i></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <section class="fosterhouses text-center text-md-left">
+        <div class="py-5 mt-3 container">
+            <div class="row">
+                <div class="col-12 col-md-6 d-none d-flex">
+                    <figure>
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1SEjBfBIVP4eb2eafpe22lWEjNNDRTnLy" id="foster-map"></iframe>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2>Foster Homes</h2>
+                    <p>To date, PawVille has 4 foster homes in total, located in various areas around Singapore and Riau
+                        Islands. Our foster houses hold 200
+                        friends in total and
+                        our fur friends are always open to looking for new friends and families.
+                    </p>
+                    <p>Please come and play with us!</p>
+                    <p>Open everyday from 09.00 AM to 06.00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

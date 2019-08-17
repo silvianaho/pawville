@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/help.css">
+
+    <!-- <link rel="stylesheet" href="css/desktop.css"> -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <section class="help-header text-center p-5">
+        <h1 class="display-md-1 py-5">How Can We Help You?</h1>
+    </section>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="card col-md-7 col-sm mt-4 mt-md-0 order-md-2">
+                <div class="card-body" id="display">
+                    <h4 class="card-title" id="faqques"> </h4>
+                    <div class="card-text" id="faqans">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+
+                <div id="accordion">
+                    <!-- Community Pets -->
+                    <div class="card">
+                        <div class="card-header" id="comPets">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Community Pets
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="comPets" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="list-group list-group-flush" id="list-1">
+                                    <!-- Q1 -->
+                                    <a class="list-group-item list-group-item-action" id="whatcp-list"
+                                        data-toggle="list" href="#whatcp" aria-controls="#whatcp">What is a
+                                        community
+                                        pet?</a>
+                                    <div class="d-none ans" id="#whatcp">
+                                        <p>
+                                            A community pet is often referred to as a stray animal, but the word
+                                            ‘community’
+                                            better describes their. The word "stray" gives one the impression that
+                                            these
+                                            animals don’t have a home — but they do have a home, which is the
+                                            environment
+                                            they live in! Some of these community pets have been residents in the
+                                            environment for much longer than some of the residents. Hence, they are
+                                            a part
+                                            of the community too!
+                                        </p>
+                                    </div>
+
+                                    <a class="list-group-item list-group-item-action" id="feedcp-list"
+                                        data-toggle="list" href="#feedcp" aria-controls="#feedcp">Is
+                                        feeding community pets legal?</a>
+                                    <div class="d-none ans" id="#feedcp">
+                                        <p>
+                                            Feeding a Community pet is not illegal. However, littering is illegal.
+                                            Please
+                                            make sure that you feed responsibly and that the area is cleaned up
+                                            after you
+                                            are done with the feeding.
+                                        </p>
+                                    </div>
+
+                                    <a class="list-group-item list-group-item-action" id="whattodo-list"
+                                        data-toggle="list" href="#whattodo" aria-controls="#whattodo">What
+                                        should I do with community pets?</a>
+                                    <div class="d-none ans" id="#whattodo">
+                                        <span class="d-block pb-1">
+                                            It is advisable to NOT remove a community pet from its environment
+                                            unless
+                                            it’s
+                                            in danger. Most animals are fine where they are. If you’d like to
+                                            help, do
+                                            consider getting it sterilised if isn’t already and return it to the
+                                            area
+                                            where
+                                            you originally found it.
+                                        </span>
+                                        <span class='d-block pb-1'>
+                                            Additionally, because of the vacuum effect, more cats will move into
+                                            the
+                                            area to
+                                            take the place of cats that have been removed.
+                                        </span>
+                                        <span class="d-block pb-1">
+                                            There are not enough homes and shelters to house them all. So please
+                                            refrain
+                                            from taking a healthy community pet away from its home!
+                                        </span>
+                                    </div>
+
+                                    <a class="list-group-item list-group-item-action" id="feedrule-list"
+                                        data-toggle="list" href="#feedrule" aria-controls="#feedrule">Are
+                                        there any rules I should follow to feed a community pet?</a>
+                                    <div class="d-none ans" id="#feedrule">
+                                        <span class="d-block pb-1">Yes, there are a few strict rules to
+                                            community animal
+                                            feeding:</span>
+
+                                        <ul>
+                                            <li>Don’t place food directly on the floor, use paper plates, bowls
+                                                or
+                                                newspaper.</li>
+                                            <li>Always clear up leftovers and do not leave a mess.</li>
+                                            <li>Feed away from areas where there is high human traffic.</li>
+                                            <li>
+                                                Always feed animals downstairs. NEVER feed upstairs along
+                                                corridors or
+                                                on stair
+                                                landings, as animals would be attracted to loiter in these areas
+                                                and
+                                                cause
+                                                inconvenience to your neighbours.
+                                            </li>
+                                            <li>Never throw food out your window!</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pets in trouble -->
+                    <div class="card">
+                        <div class="card-header" id="trouble">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Pets in trouble
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="trouble" data-parent="#accordion">
+                            <div class="card-body">
+
+                                <div class="list-group list-group-flush" id="list-2">
+                                    <!-- Q1 -->
+                                    <a class="list-group-item list-group-item-action" id="lostmine-list"
+                                        data-toggle="list" href="#lostmine" aria-controls="#lostmine">I lost my
+                                        pet</a>
+                                    <div class="d-none ans" id="#lostmine">
+                                        <p>
+                                            Time is of the essence. Act quickly to find your pet.
+                                        </p>
+                                        <p>
+                                            Spend some time looking around your neighbourhood. Calling out to
+                                            your pet may draw it out of its hiding place.
+                                        </p>
+                                        <p>
+                                            Put up posters around your neighbourhood with your pet photo, last
+                                            known sighting and your contact number.
+                                        </p>
+                                        <p>
+                                            Call the AVA at <a href="tel:1800 476 1600">1800 476 1600</a> and SPCA at <a
+                                                href="tel:62875355">62875355</a> to find out if
+                                            your pet has been brought in there. If you live in an HDB estate,
+                                            call your Town Council to see if they have recently trapped any
+                                            animals. You can find your Town Council’s number at www.sgdi.gov.sg.
+                                        </p>
+                                        <p>Enlist members of the community to help you find your pet</p>
+                                        <p>
+                                            Take precautions to safeguard your pets.
+                                        </p>
+                                        <p>
+                                            We can’t stress enough the importance of keeping pet cats indoors. A
+                                            roaming pet is more likely
+                                            to be trusting and a lost pet may try to find a familiar place to
+                                            hide like someone’s home, even if
+                                            they don’t like cats. They may also become a victim of other cats
+                                            that already sees the
+                                            neighbourhood as
+                                            their territory.
+                                        </p>
+                                    </div>
+
+                                    <a class="list-group-item list-group-item-action" id="babies-list"
+                                        data-toggle="list" href="#babies" aria-controls="#babies">I found animal
+                                        babies</a>
+                                    <div class="d-none ans" id="#babies">
+                                        <ol>
+                                            <li>
+                                                <p>Try not to separate the mother and her babies</p>
+                                                <p>
+                                                    Please check and make sure the mother is really not around before
+                                                    touching the babies.
+                                                    Babies who
+                                                    are still at nursing age need the colostrum in their mother’s milk
+                                                    to survive. Once you’ve
+                                                    touched
+                                                    the babies,
+                                                    your scent will be imprinted on them and the mother may feel
+                                                    threatened and abandon it.
+                                                </p>
+                                                <p>
+                                                    It is common for the mother to leave her babies for a few hours to
+                                                    hunt for food. If you are
+                                                    standing
+                                                    in front of the babies, the mother is not going to appear. The best
+                                                    thing you can do is
+                                                    to walk off and check back periodically. If the babies are still
+                                                    there and in distress, then
+                                                    you
+                                                    might
+                                                    consider taking the babies in.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Bring the animals to a vet for a check-up, especially if you have no
+                                                    experience in handling
+                                                    them.
+                                                    The vet will be able to provide good advice on how and what to feed
+                                                    them. Please do not feed
+                                                    them
+                                                    cow’s milk. Special animal baby formulas are available in pet
+                                                    stores.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    If the mother is around, it is recommended to leave the mother and
+                                                    kitten alone until they
+                                                    are older
+                                                    and more independent before rescuing them.
+                                                    If they are in an unsafe location, call a professional animal
+                                                    trapper to trap the whole
+                                                    brood.
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    Sterilise the mother and other animals in the area to stop the
+                                                    endless cycle
+                                                    Animal babies sighting can also mean that there are unsterilised
+                                                    animals in your
+                                                    neighbourhood.
+                                                    Please consider sterilising them to nip the problem in the bud as
+                                                    there will never be enough
+                                                    homes for
+                                                    all the babies found if the breeding keeps on.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                    <a class="list-group-item list-group-item-action" id="injured-list"
+                                        data-toggle="list" href="#injured" aria-controls="#injured">I found an injured
+                                        animal</a>
+                                    <div class="d-none ans" id="#injured">
+                                        <p>YOU ARE ITS BEST HOPE.</p>
+                                        <p>
+                                            No one will get there faster than the person who is already there. Here are
+                                            some ways you
+                                            can help the animal:
+                                        </p>
+                                        <ul>
+                                            <li>Call SPCA’s 24hr hotline at <a href="tel:62875355">62875355</a> ext 9
+                                                for help.</li>
+                                            <li>Put the animal in a secure box and bring it to a vet.</li>
+                                            <li>Call a professional trapper.</li>
+                                            <li>Connect with others for advice and support.</li>
+                                            <li>
+                                                Locate the feeder in the area to let them know what happened as they
+                                                might be worried.
+                                                When the animal is healthy again, assess its situation to decide whether
+                                                to release it back to
+                                                the community or
+                                                put it up for adoption. For reintegration, work with the feeder to
+                                                settle the animal back into
+                                                the
+                                                community.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <a class="list-group-item list-group-item-action" id="complaint-list"
+                                        data-toggle="list" href="#complaint" aria-controls="#complaint">I received
+                                        complaint about my pet</a>
+                                    <div class="d-none ans" id="#complaint">
+                                        <p>Here are some ways you can avoid getting a complaint for about your pet:</p>
+                                        <ul>
+                                            <li>
+                                                Sterilise your pet. If you have difficulties sending your pets for
+                                                sterilisation, there is a low
+                                                income pet sterilisation
+                                                scheme.
+                                            </li>
+                                            <li>Install meshing on your gate and windows to train your pets to be an
+                                                indoor pets.</li>
+                                            <li>If you have too many cats, do put some of them up for adoption after
+                                                they have been sterilised.
+                                            </li>
+                                            <li>Please do not abandon your cats as that will cause their suffering.</li>
+                                            <li>Surrendering to AVA leads to a high chance that they will be put down.
+                                            </li>
+                                            <li>
+                                                If you have adhered to the above and still received a complaint, think
+                                                back to whether there are
+                                                other
+                                                issues you may have with your neighbour that has led to the complaint.
+                                                You can seek your MP’s
+                                                assistance
+                                                on the grounds that the complaint is baseless and unjust. You can also
+                                                seek mediation at the
+                                                Community
+                                                Mediation Centre to resolve non-cat-related disputes to reach an
+                                                amicable solution with your
+                                                neighbour
+                                                that safeguards your cats.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Animal Abuse -->
+                    <div class="card">
+                        <div class="card-header" id="abuse">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Animal Abuse
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="abuse" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="list-group list-group-flush" id="list-3">
+                                    <!-- Q1 -->
+                                    <a class="list-group-item list-group-item-action" id="online-list"
+                                        data-toggle="list" href="#online" aria-controls="#online">
+                                        What do I do when I come across a questionable animal adoption or sale listing
+                                        online?
+                                    </a>
+                                    <div class="d-none ans" id="#online">
+                                        <p>
+                                            It is illegal to sell animals without a license. If you have evidence that
+                                            someone is breeding
+                                            animals for sale in their home or on unlicensed premises, send them to AVA
+                                            and alert them at
+                                            <a href="tel:18004761600">1800 476 1600</a> or <a
+                                                href="mailto:ava_cawc@ava.gov.sg">ava_cawc@ava.gov.sg</a>.
+                                            Otherwise, you can also report it to AVA or the police should there be
+                                            insufficient evidence.
+                                        </p>
+                                        <p>
+                                            If possible, make contact with the seller by posing as a potential client.
+                                            Do not
+                                            reveal your intention and ask questions that a buyer would typically ask and
+                                            note down the
+                                            responses (spoken and unspoken).
+                                        </p>
+
+                                        <ol>
+                                            <li>How was the animal procured?</li>
+                                            <li>Is the animal tested, sterilised or vaccinated? Do you have any
+                                                evidence?</li>
+                                            <li>What kind of care would the animal need if I adopt/buy it? Is there any
+                                                special care needed for
+                                                this animal? </li>
+                                            <li>The price seems expensive, why does the animal cost so much?</li>
+                                            <li>How and where do I pick it up?</li>
+                                            <li>How long has this animal been here?</li>
+                                        </ol>
+                                        <p class="tiny">*Additional follow up questions that are natural are also
+                                            greatly appreciated</p>
+
+                                        <p>
+                                            If you are able to secure a meeting with the person, alert us so that we can
+                                            inform people in the area to help. When you have enough information about
+                                            the seller, close the
+                                            deal with money and a handshake, preferably recorded in photos or videos.
+                                            Then your case can be
+                                            made.
+                                            Please note that cases are made or broken by the quality of information that
+                                            is gathered.
+                                        </p>
+                                        <p>
+                                            Stay cool and do not reveal your agenda or you might alert the suspect and
+                                            close the door for
+                                            further investigation.
+                                            Most importantly, exercise with caution at all times.
+                                        </p>
+                                    </div>
+
+                                    <a class="list-group-item list-group-item-action" id="knockdown-list"
+                                        data-toggle="list" href="#knockdown" aria-controls="#knockdown">
+                                        I knocked down an animal with my vehicle. What should I do?
+                                    </a>
+                                    <div class="d-none ans" id="#knockdown">
+                                        <p>
+                                            Anyone involved in a hit-and-run accident, even if the victim is an animal,
+                                            can
+                                            be fined up to
+                                            $3,000 or
+                                            jailed up to a year under the Road Traffic Act.
+                                        </p>
+                                        <p>
+                                            In the event that a driver hits an animal, the driver should slow down, stop
+                                            the
+                                            vehicle and check
+                                            on
+                                            the animal. The driver should take the animal to the nearest vet clinic or
+                                            request for help on the
+                                            spot
+                                            as time is often of the essence.
+                                        </p>
+                                        <p>
+                                            Those with little experience in handling animals can call the SPCA emergency
+                                            hotline at <a href="tel:62875355">62875355</a> ext 9
+                                            and wait for the SPCA staff members to arrive. The driver should alert
+                                            nearby
+                                            drivers to slow
+                                            down and drive cautiously – the traffic police will generally assist in this
+                                            area.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pet ownership -->
+                    <div class="card">
+                        <div class="card-header" id="own">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Pet Ownership
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="own" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="list-group list-group-flush" id="list-4">
+                                    <!-- Q1 -->
+                                    <a class="list-group-item list-group-item-action" id="giveup-list"
+                                        data-toggle="list" href="#giveup" aria-controls="#giveup">
+                                        I have to give up my pet, what are my options?
+                                    </a>
+                                    <div class="d-none ans" id="#giveup">
+                                        <p>
+                                            Please consider carefully before giving up your pet, especially if your
+                                            pet
+                                            is an adult as they
+                                            statistically have shown to be less adopted to their younger furry
+                                            friends.
+                                        </p>
+
+                                        <p>
+                                            Please also remember that pet abandonment is considered a form of animal
+                                            abuse, which is a crime,
+                                            because many domesticated animals cannot survive on their own.
+                                            These animals do not have the adequate survival instincts to fend for
+                                            themselves against the
+                                            dangers in their new environment they are prone to diseases, starvation,
+                                            injury, and even death.
+                                        </p>
+
+                                        <p>
+                                            When you abandon your pets, you are also passing on your problem to a
+                                            hapless caregiver who has to
+                                            take care of your pet at their own expense. Furthermore, there is a
+                                            limit to
+                                            the number of animals
+                                            that
+                                            an estate can tolerate. Please check with responsible pet shelters or
+                                            find
+                                            responsible personnel to
+                                            take care of your pet. Below are 2 common approaches:
+                                        </p>
+
+                                        <p>1. Put your pet up for adoption.</p>
+                                        <p>2. Consider short-term or long-term boarding options at shelters.</p>
+                                        <p>3. Surrender your pets to SPCA or AVA only as a last resort. With the
+                                            high
+                                            number of cats that they
+                                            receive every day, the chance of your pet being euthanised is high.</p>
+                                    </div>
+
+                                    <a class="list-group-item list-group-item-action" id="move-list" data-toggle="list"
+                                        href="#move" aria-controls="#move">
+                                        I am moving overseas, where do I find information about pet relocation?
+                                    </a>
+                                    <div class="d-none ans" id="#move">
+                                        <p>Agri-Food & Veterinary Authority of Singapore has been overseeing the
+                                            import
+                                            and export of personal
+                                            pets. Information about animal relocations are found on their <a
+                                                href="https://www.sfa.gov.sg/ava/explore-by-sections/pets-and-animals/bringing-animals-into-singapore-exporting/bringing-in-transshipping-dogs-cats"
+                                                target="_blank">website</a>.
+                                        </p>
+                                        <p>You can also consult and engage the following relocation expert to assist
+                                            you
+                                            in the matter:
+                                        </p>
+                                        <p>1. <a href="http://kittycarehaven.com">Kittycare Haven</a></p>
+
+                                        <p>2. <a href="http://rictedkennels.com">Ricted Kennels</a></p>
+
+                                        <p>Pets are for life. Please consider carefully your relocation plans before
+                                            you
+                                            adopt a pet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More -->
+                    <div class="card">
+                        <div class="card-header" id="more">
+                            <h5 class="mb-0">
+                                <button class="list-group-item d-inline-block btn btn-link collapsed"
+                                    data-toggle="collapse" data-target="#helpform" aria-expanded="false"
+                                    aria-controls="helpform">More Questions</button>
+                            </h5>
+                        </div>
+
+                        <div id="helpform" class="collapse" aria-labelledby="more" data-parent="#accordion">
+                            <div class="d-none ans">
+                                <p>If you have more question that you would like to highlight to us that is not listed
+                                    above, do send a message to
+                                    notify us
+                                    using the following form:</p>
+
+                                <div id="faqBox">
+                                    <form class="needs-validation" id="faq-form" novalidate action="thankyou.html">
+                                        <div class="row mt-2">
+                                            <div class="col-12 mb-3 form-group">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" id="name" name="name"
+                                                    placeholder="Bryan" required>
+                                                <div class="invalid-feedback d-none">
+                                                    Name must be more than 3 alphabets.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="you@example.com" required>
+                                            <div class="invalid-feedback">
+                                                Please enter a valid email address.
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message">Enquiry:</label>
+                                            <textarea class="form-control" id="enquiry" name="enquiry" rows="10"
+                                                cols="30" required></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter your question.
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-lg btn-block" id="sendq"
+                                            type="submit">Send</button>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer id="footer"></footer>
+
+</body>
+
+</html>
