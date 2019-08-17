@@ -13,7 +13,7 @@ if (pg.search("form-contact.html") >= 0 || pg.search("thankyou.html") >= 0) {
     document.writeln("<script type='text/javascript' src='js/contact.js'></script>");
 }
 
-if (pg.search("indexca2.html") >= 0) {
+if (pg.search("index.html") >= 0) {
     document.writeln("<script type='text/javascript' src='js/index.js'></script>");
 }
 
