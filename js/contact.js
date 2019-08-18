@@ -72,7 +72,7 @@ $(document).ready(function () {
         if (valid) {
             $("form#faq-form").submit();
         }
-    })
+    });
 
     var urlparams = new URLSearchParams(location.search);
     var name = urlparams.get("name");
@@ -87,10 +87,10 @@ $(document).ready(function () {
     <p>We have received your message!</p>
     <p>Message: ${message}</p>
     <p>From: ${name} (${email})</p>
-    <p>We will get back to you in 4 work days</p>
-    <a class="btn btn-warning" href="donation.html">Donate Again</a>
+    <p>We will get back to you in 4 working days</p>
     <a class="btn btn-warning" href="index.html">Back to home</a>
     </strong>
         `;
     $(".msgthx").html(msg);
+
 })

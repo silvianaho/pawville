@@ -95,17 +95,19 @@ $(document).ready(function () {
             var message = urlparams.get("enquiry");
 
 
-            var meow = `
-        <p class="display-4">Thank you, ${name}!</p>
-        <hr>
-        <div class="lead">
-        <p>meow: ${message}</p>
-        <p>From: ${name} (${email})</p>
-        </div>
+            var msg = `
+    <strong>
+    <p class="display-4">Thank you, ${name}!</p>
+    <hr>
+    <div class="lead">
+    <p>We have received your message!</p>
+    <p>Message: ${message}</p>
+    <p>From: ${name} (${email})</p>
+    <p>We will get back to you in 4 working days</p>
+    <a class="btn btn-warning" href="index.html">Back to home</a>
+    </strong>
         `;
-            $(".msgthx").removeClass('d-none');
-
-            $(".msgthx").html(meow);
+            $(".msgthx").html(msg);
         }
 
 
