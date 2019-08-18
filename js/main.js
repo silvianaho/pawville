@@ -9,7 +9,7 @@ if (pg.search("donation.html") >= 0 || pg.search("thankyou.html") >= 0) {
     document.writeln("<script type='text/javascript' src='js/donation.js'></script>");
 }
 
-if (pg.search("form-contact.html") >= 0 || pg.search("thankyou.html") >= 0) {
+if (pg.search("contact.html") >= 0 || pg.search("messagenoted.html") >= 0) {
     document.writeln("<script type='text/javascript' src='js/contact.js'></script>");
 }
 
@@ -27,8 +27,4 @@ if (pg.search("error.html") >= 0) {
 
 if (pg.search("help.html") >= 0) {
     document.writeln("<script type='text/javascript' src='js/help.js'></script>");
-}
-
-if (pg.search("contact.html") >= 0) {
-    document.writeln("<script type='text/javascript' src='js/contact.js'></script>");
 }

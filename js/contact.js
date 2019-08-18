@@ -75,18 +75,18 @@ $(document).ready(function () {
     });
 
     var urlparams = new URLSearchParams(location.search);
-    var name = urlparams.get("name");
-    var email = urlparams.get("email");
-    var message = urlparams.get("message");
+    var msgname = urlparams.get("name");
+    var msgemail = urlparams.get("email");
+    var msgmessage = urlparams.get("message");
 
     var msg = `
     <strong>
-    <p class="display-4">Thank you, ${name}!</p>
+    <p class="display-4">Thank you, ${msgname}!</p>
     <hr>
     <div class="lead">
     <p>We have received your message!</p>
-    <p>Message: ${message}</p>
-    <p>From: ${name} (${email})</p>
+    <p>Message: ${msgmessage}</p>
+    <p>From: ${msgname} (${msgemail})</p>
     <p>We will get back to you in 4 working days</p>
     <a class="btn btn-warning" href="index.html">Back to home</a>
     </strong>
