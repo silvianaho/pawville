@@ -1,3 +1,33 @@
+:root {
+    --mycustomcolor: #b8860b;
+    --hovercolor: #ff8c00;
+}
+
+.mycustomcolor-link {
+    color: var(--mycustomcolor);
+}
+
+.mycustomcolor-link:hover {
+    color: var(--hovercolor);
+}
+
+.custombg.active {
+    background-color: var(--mycustomcolor);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.custombtn:hover, .custombtn {
+    background-color: var(--mycustomcolor);
+    border-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.custombtn:active, .custombtn:focus{
+    background-color: var(--hovercolor);
+    border-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
 .transparent-bar {
     background-color: rgba(0, 0, 0, 0);
 }

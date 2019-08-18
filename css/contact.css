@@ -27,3 +27,7 @@
     top: 0px;
     height: 60px;
 }
+
+#location iframe{
+    height: 50vh;
+}
