@@ -1,10 +1,15 @@
 .parallax {
     background-image: url('../img/catdog_opt.jpg');
-    /* Full height */
     height: 80vh;
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.imgcred {
+    position: absolute;
+    top: 75vh;
+    left: 10px;
 }

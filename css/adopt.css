@@ -82,29 +82,16 @@
 
 
 .parallaxAdopt {
-    background-image: url('../img/cat\ hi-5.jpg');
-    /* Full height */
+    background-image: url('../img/cat\ hi-5_opt.jpg');
     height: 80vh;
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* .modal {
-    display: block;
-    position: fixed;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+.imgcred {
+    position: absolute;
+    top: 75vh;
+    left: 10px;
 }
-
-.modal-content {
-    margin: auto;
-    display: block;
-    height: auto;
-    max-width: 60wh;
-} */
