@@ -1,6 +1,5 @@
 var pg = location.pathname;
 document.writeln("<script type='text/javascript' src='js/template.js'></script>");
-// document.writeln("<script type='text/javascript' src='js/newsvalid.js'></script>");
 
 if (pg.search("adopt.html") >= 0) {
     document.writeln("<script type='text/javascript' src='js/lightbox.js'></script>");
@@ -30,3 +29,4 @@ if (pg.search("help.html") >= 0) {
     document.writeln("<script type='text/javascript' src='js/help.js'></script>");
 }
 
+document.writeln("<script type='text/javascript' src='js/newsvalid.js'></script>");
