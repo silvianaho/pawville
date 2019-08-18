@@ -1,0 +1,16 @@
+Bootstrap Table classes : donation.html
+Global display, typography and link styles : didn't know how to edit scss files, created a variable in main.css instead (mycustomcolor), edited the scrollbar just for fun
+
+
+Forms:
+- Newsletter Form (only show alert after submit)
+- Donation Form (show thankyou.html after submit)
+- Help & Contact Form (show messagenoted.html after submit)
+
+JavaScript photo gallery/slideshow:
+- Adoption page (adopt.html)
+
+File name:
+DIT1A02_1939213_Silviana.zip
+
+references.doc
