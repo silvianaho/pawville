@@ -70,25 +70,27 @@ $(document).ready(function () {
         event.preventDefault();
         var valid = isvalid();
         if (valid) {
-            $("#display form#faq-form").submit();
+            $("form#faq-form").submit();
         }
     })
 
     var urlparams = new URLSearchParams(location.search);
     var name = urlparams.get("name");
     var email = urlparams.get("email");
-    var message = urlparams.get("enquiry");
+    var message = urlparams.get("message");
 
-
-    var meow = `
-        <p class="display-4">Thank you, ${name}!</p>
-        <hr>
-        <div class="lead">
-        <p>meow: ${message}</p>
-        <p>From: ${name} (${email})</p>
-        </div>
+    var msg = `
+    <strong>
+    <p class="display-4">Thank you, ${name}!</p>
+    <hr>
+    <div class="lead">
+    <p>We have received your message!</p>
+    <p>Message: ${message}</p>
+    <p>From: ${name} (${email})</p>
+    <p>We will get back to you in 4 work days</p>
+    <a class="btn btn-warning" href="donation.html">Donate Again</a>
+    <a class="btn btn-warning" href="index.html">Back to home</a>
+    </strong>
         `;
-    $(".msgthx").removeClass('d-none');
-
-    $(".msgthx").html(meow);
+    $(".msgthx").html(msg);
 })

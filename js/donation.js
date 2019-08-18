@@ -298,7 +298,6 @@ $(document).ready(function () {
 
     var urlparams = new URLSearchParams(location.search);
     var name = urlparams.get("firstName");
-    var email = urlparams.get("email");
     var donationamount = urlparams.get("amounts");
     var donationinterval = urlparams.get("interval");
     var show;
@@ -310,16 +309,15 @@ $(document).ready(function () {
     }
 
     var msg = `
+    <strong>
     <p class="display-4">Thank you, ${name}!</p>
-    <p>We have received your donation!</p>
-    <p>We have received your donation!</p>
     <hr>
     <div class="lead">
+    <p>We have received your donation!</p>
     <p>Donation received: ${show}</p>
-    <p>From: ${name} (${email})</p>
-    </div>
-    `;
-    $(".donationthx").removeClass('d-none');
+    <a class="btn btn-warning" href="donation.html">Donate Again</a>
+    <a class="btn btn-warning" href="index.html">Back to home</a>
+    </strong>`;
     $(".donationthx").html(msg);
 
 })

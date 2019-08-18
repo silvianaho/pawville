@@ -22,7 +22,7 @@
     color: #fff;
 }
 
-.custombtn:active, .custombtn:focus{
+.custombtn:active, .custombtn:focus {
     background-color: var(--hovercolor);
     border-color: rgba(0, 0, 0, 0);
     color: #fff;
@@ -53,7 +53,6 @@
     min-height: 500px;
     width: 100%;
     z-index: 1;
-    opacity: 0.7;
 }
 
 .pic1 {
@@ -61,6 +60,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.pic2 {
+    background-image: url('../img/bunchofdogs.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
 }
 
 .darkbg {
